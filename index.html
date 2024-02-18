@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Hotkeys Softwarezeraah</title>
+</head>
+<body>
+    <header id="container-li">
+        <ul id="cont-um">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#hotkeys">Hotkeys</a></li>
+            <li><a href="#discord">Discord</a></li>
+            <li><a href="#download">Dowloads</a></li>
+            <li><a href="#targeting-tutorial">Tutorias</a></li>
+        </ul>
+        <img src="./public/demonoak.gif" alt="gif">
+    </header>
+
+    <section id="inicio">
+        <h1>Bem-vindo ao site <span class="nome">Softwarezeraah!</span></h1>
+        <p>Por que escolher o nosso site? No Softwarezeraah, estamos comprometidos em fornecer uma plataforma abrangente e confiável para a comunidade de Tibia. Nossa equipe dedicada trabalha incansavelmente para oferecer conteúdo de alta qualidade, ferramentas poderosas e suporte excepcional para todos os nossos usuários. Junte-se a nós hoje e embarque em uma jornada emocionante pelo mundo de Tibia!</p>
+    </section>
+
+    <section id="hotkeys">
+        <div class="container-center">
+            <ul id="menu">
+                <li>
+                    <a href="#" onclick="showContent('hotkey-content')">
+                        <img src="./public/todos.png" alt="todos">
+                        <span>Todas Hotkeys</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="showContent('mages-content')">
+                        <img src="./public/mages.png" alt="mage">
+                        <span>Hotkeys Socerer/Elder</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="showContent('elite-content')">
+                        <img src="./public/knight.png" alt="knight">
+                        <span>Hotkeys Elite Knight</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="showContent('royal-content')">
+                        <img src="./public/paladin.png" alt="paladin">
+                        <span>Hotkeys Royal Paladin</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        
+        <div class="container-left">
+            <div id="mages-content">    
+                <h1>Mages (Druid ou Sorcerer)</h1>
+                <p>auto 200 stronghaste</p><br>
+                <p>auto 200 manashield</p><br>
+                <p>auto 9000 eatfood</p><br>
+                <p>auto 200 healparalysis utani gran hur</p><br>
+                <p>auto 200 attack target</p><br>
+                <p>auto 200 sd target</p><br>
+                <p>auto 200 say 'Exevo gran mas frigo (ou mas flam, vis , tera)</p><br>
+                <p>auto 200 siofriend 85 (name)</p><br>
+                <p>auto 200 equipboots 6529 * Equipará soft boots!</p><br>
+               <p>auto 200 paralyze target</p><br>
+            </div>
+            
+            <div id="elite-content">
+                <h1>Elite knight</h1>
+                <p>auto 200 haste</p><br>
+                <p>auto 200 attack target</p><br>
+                <p>auto 200 say 'Exori gran (ou ico, hur)</p><br>
+                <p>auto 200 equipboots 6529 * Equipará soft boots!</p><br>
+                <p>auto 60000 utito tempo</p><br>
+                <p>auto 200 listas 'Health RP' | if [$hppc < 88] {say 'exana mort'} | if [$hppc < 95] say 'exori ico'</p><br>
+            </div>
+            
+            <div id="royal-content">
+                <h1>Royal Paladin</h1>
+                <p>auto 200 haste</p><br>
+                <p>auto 200 manashield</p><br>
+                <p>auto 200 attack target</p><br>
+                <p>auto 200 listas 'Health RP' | if [$hppc < 88] {say 'exura san'} | if [$hppc < 95] say 'exura gran'</p><br>
+                <p>auto 100 listas 'Trocar Ring' | if [$hppc <= 60] {equipring 3051} | if [$hppc => 90] {equipring IDRING}</p><br>
+                <p>auto 60000 utito tempo san</p><br>
+                <p>auto 200 say 'Exevo mas san (ou exori san, exori con)</p><br>
+            </div>
+            <div id="hotkey-content">
+                <h1>Todas Hotkeys</h1>
+                <h4>HP menor que 67% usará Exura Vita, com HP menor que 88% usará Exura Gran e com HP menor que 95% usará Exura. Fique a vontade para alterar ao seu gosto.</h4><br>
+                <p>auto 200 listas 'Health Mage' | if [$hppc < 67] {say 'exura vita'} | if [$hppc < 88] {say 'exura gran'} | if [$hppc < 95] say 'exura'</p><br>
+                <h4>Com HP menor que 88% usará Exura San e com HP menor que 95% usará Exura Gran. Fique a vontade para alterar ao seu gosto.</h4><br>
+                <p>auto 200 listas 'Health RP' | if [$hppc < 88] {say 'exura san'} | if [$hppc < 95] say 'exura gran'</p><br>
+                <h4>Com HP menor que 95% usará Exana Mort. Fique a vontade para alterar ao seu gosto.</h4><br>
+                <p>auto 200 listas 'Health EK' | if [$hppc < 95] say 'exana mort'</p><br>
+                <h4>Vai usar potion em você quando estiver com Mana menor ou igual a 75%, pode mudar para quanto quiser. Para servers editados também podem ser runas.<br></h4>
+                <p>auto 100 listas 'Potion HP' | if [$hppc <= 75] {useoncreature IDPOTION self}</p><br>
+                <h4>Health Friend (Sio, Res e UH) Sio Friend Pode mudar para a % que quiser, abaixo está em 70%.</h4><br>
+                <p>auto 100 listas 'Sio Friend' | safe sio 70 friend<br></p>
+                <h4>UH Friend Pode mudar para a % que quiser, abaixo está em 70%.</h4><b>
+                <p>auto 100 listas 'UH Friend' | safe uhpc 70 friend</p><br>
+                <h4>Sio Party
+                    Pode mudar para a % que quiser, abaixo está em 70%.</h4><br>
+                    <p>auto 100 listas 'Sio Party' | foreach 'allplayers' $l {if [$l.party >= 3 && $l.hppc < 70] {say 'exura sio "$l.name'}}</p><br>
+                    <h4>Sio All
+                        Vai dar sio em qualquer um na tela, não precisa estar em party nem ser friend. Pode mudar para a % que quiser, abaixo está em 70%.</h4><br>
+                        <p>auto 200 listas 'Sio ALL' | foreach 'screenplayers' $sio if [$sio.hppc <= 70 && $sio.isshootable] {say 'exura sio "$sio.name"'}</p><br>
+                        <h4>Exura Gran Mas Res
+                            Vai dar mas res se algum amigo estiver até 3 sqm de você com vida baixa. Pode mudar para a % que quiser, abaixo está em 70%.</h4><br>
+                            <p>auto 200 listas 'Area Res' | foreach 'floorplayers' $exresres if [$exresres.isfriend && $exresres.hppc <= 70 && $exresres.distance <= 3] {say exura gran mas res}</p><br>
+                    <h4>Bless e Aol
+                        Bless sempre que reconectar</h4><br>
+                    <p> auto 200 listas 'Auto Blessings' | if [$connected == 1 && $blessings != 1] {say !bless | wait 1000 | say !bless | wait 1000 | say !bless | set $blessings 1} | if [$connected == 0] {set $blessings 0}</p><br>
+                    <h4> Aol sempre que estiver sem amuleto</h4><br>
+                    <p>  auto 200 listas 'Auto Aol' | if [$amuletslot.id == 0] {say !aol | wait 1000}</p><br>
+                    <h4>Reconnect
+                        Se morrer</h4><br>
+                    <p> auto 200 listas 'Reconnect' | if [$hp == 0] {reconnect | wait 5000}</p><br>
+                    <h4>Se desconectar</h4><br>
+                    <p>  auto 200 listas 'Reconnect' | if [$connected == 0] {reconnect | wait 5000}</p><br>
+                    <h4>Se desconectar aleatório
+                        Igual a hotkey anterior, porém ele irá relogar em um tempo aleatório. Útil para não bugar no Server Save.</h4> <br>
+                    <p>auto 200 listas 'Reconnect' | if [$connected == 0] {reconnect | wait $rand.30000.90000}</p><br>
+                    <h4>Se morrer ou desconectar</h4><br>
+                    <p>auto 200 listas 'Reconnect' | if [$hp == 0 || $connected == 0] {reconnect | wait 5000}</p><br>
+                    <h4>  Anti-idle
+                        Se você ficar parado por 3 minutos ou mais seu char começará a girar.</h4><br>
+                    <p>auto 200 listas 'Anti-idle' | if [$standtime >= 3*60*1000] {turnn | wait 1000 | turne | wait 1000 | turnw | wait 1000 | turns | say '' | wait 1000}</p><br>
+                    <h4>   Dash
+                        Só adicionar as hotkeys por tecla em seus respectivos números.</h4> <br>
+                    <p> 1 – movesw
+                    
+                        2 – moves
+                        
+                        3 – movese
+                        
+                        4 – movew
+                        
+                        6 – movee
+                        
+                        7 – movenw
+                        
+                        8 – moven
+                        
+                        9 – movene</p> <br>
+                        <h4> Bugmap
+                            WASD</h4><br>
+                        <p> auto 1 listas 'Bugmap - WASD' | if [$key.65] {usegroundxyz [$posx-7] $posy $posz | end} | if [$key.68] {usegroundxyz [$posx+7] $posy $posz | end} | if [$key.83] {usegroundxyz $posx [$posy+6] $posz | end} | if [$key.87] {usegroundxyz $posx [$posy-6] $posz | end} | if [$key.67] {usegroundxyz [$posx+6] [$posy+5] $posz | end} | if [$key.90] {usegroundxyz [$posx-6] [$posy+5] $posz | end} | if [$key.81] {usegroundxyz [$posx-6] [$posy-5] $posz | end} | if [$key.69] {usegroundxyz [$posx+6] [$posy-5] $posz | end}</p><br>
+                        <h4>
+                            Manashield (Utamo Vita)</h4><br>
+                        <p>auto 100 listas 'ManaShield' | if [$manashielded == 0] {say 'utamo vita'}</p><br>
+                        <h4>Eat food
+                            Todos os foods</h4><br>
+                        <p>auto 200 listas 'EatFood' | eatfood | wait 60000</p><br>
+                        <h4>Custom Food/BP Fechada
+                            Você pode substituir o ID por qual desejar, no caso está do brown mushroom, ela usa o food com bp fechada.</h4><br>
+                        <p> auto 200 listas 'Custom Food' | wait 1000 | useitem 3725 | wait 60000</p><br>
+                        <h4>
+                            essa funciona em todos os itens, porém, precisa estar com a bp em que o item está aberta.</h4><br>
+                        <p>auto 200 listas 'Stamina Item' | if [$formattime.$stamina <= '00:41:00'] {openitem IDITEM | wait 30000}</p><br>
+                        <h4>Change gold
+                            Gold</h4><br>
+                        <p>auto 1500 listas 'Change Gold' | if [$itemcount.3031 > 100] { openitem 3031 2 ''}</p><br>
+                        <h4>Platinum</h4><br>
+                        <p> auto 1500 listas 'Change Platinum' | if [$itemcount.3035 > 100] { openitem 3035 2 ''} </p><br>
+                        <h4>Crystal</h4><br>
+                        <p>auto 1500 listas 'Change Crystal' | if [$itemcount.3043 > 100] { openitem 3043 2 ''}</p><br>
+                        <h4> Change All</h4><br>
+                        <p>auto 1500 listas 'Change Coin' | if [$itemcount.3031 > 100] { openitem 3031 2 ''} | if [$itemcount.3035 > 100] { openitem 3035 2 ''} | if [$itemcount.3043 > 100] { openitem 3043 2 ''}</p><br>
+                        <h4>Auto runas (SD, Paralyze e Avalanche)
+                            SD Targeting
+                            Vai atacar o seu targeting com SD.</h4><br>
+                        <p>auto 200 listas 'SD Target' | sd target</p><br>
+                        <h4>
+                            Vai atacar o seu targeting com Paralyze, porém ao chegar em 10% de mana irá desativar automaticamente, você pode mudar.</h4><br>
+                        <p>auto 200 listas 'Paralyze Target' | if [$mppc > 10] {if [$target.isfriend == 0 && $target.isshootable] {safe paralyze target}} else {turnoff}</p><br>
+                        <h4>Magic Wall
+                            Ao apertar o scroll do mouse, vai abrir a mira para usar a mw, você pode substituir o ID 3180 para qualquer outra runa. Key 4 é a identificação do scroll do mouse. Confira a numeração das keys do teclado aqui: Keys Enumeração </h4><br>
+                        <p>auto 100 listas 'MW Scroll' | if [$key.4] {crosshair 3180} </p><br>
+                        <h4>Combo UE
+                            Coloque a mensagem que vai falar, o líder do combo e substitua a magia a depender da vocação.</h4><br>
+                        <p>auto 200 listas 'Combo ue' | foreach 'newmessages' $uejob if [$uejob.content == 'boom' && $uejob.sender == 'LÍDER DO COMBO'] {say 'exevo gran mas frigo'}</p><br>
+                        <h4>Travar Targeting
+                            Semelhante a famosa 'auto 1 attack target', porém sem exhausted.</h4><br>
+                        <p> auto 1 dontlist | if [$target.isonscreen == 1 && $tagertt == 0] {attack target | set $tagertt 1} | if [$target.isonscreen == 0] {set $tagertt 0} | if [$target.isonscreen && $target.name == 0] {attack target} | if [$target.isonscreen && $attacked.name == 0] {attack target | wait 500}</p><br>
+                        <h4>Auto Mensagem (Trade, Help e etc)
+                            Basta substituir o 'Trade' por o canal que desejar e ele irá repetir a mensagem a cada 30 segundos.</h4><br>
+                        <p>auto 200 listas 'Auto Channel MSG' | {sayin 'Trade' 'MENSAGEM' | wait 30000}</p><br>
+                        <h4>ings e Amuletos (Energy Ring, Might Ring, SSA...)
+                            Energy Ring
+                            O 60 representa que em 60% de HP irá equipar o energy ring. O 90 representa que em 90% de HP irá desequipar o energy ring. Você pode substituir as porcentagens para o quanto quiser.</h4><br>
+                        <p> auto 200 listas 'Energy Ring' | if [$hppc <= 60] {equipring 3051} | if [$hppc => 90] {unequip 'ring' 'empty'}</p><br>
+                        <h4>Alternar Energy Ring
+                            O 60 representa que em 60% de HP irá equipar o energy ring. O 90 representa que em 90% de HP irá desequipar o energy ring e equipar o ring de sua preferência, basta colocar o ID onde indica na hotkey. Você pode substituir as porcentagens para o quanto quiser.</h4><br>
+                        <p>auto 100 listas 'Trocar Ring' | if [$hppc <= 60] {equipring 3051} | if [$hppc => 90] {equipring IDRING}</p><br>
+                        <h4>  Might Ring Full
+                            A hotkey irá puxar continuadamente Might Ring sempre que acabar, mas você precisa estar com backpack aberta e sem nenhum ring equipado.</h4><br>
+                        <p> auto 100 listas 'Might Ring' | if [$ringslot.id != 3048] {equipring 3048}</p><br>
+                        <h4>Exiva
+                            Last
+                            Fica exivando o último que você exivou a cada 3 segundos</h4><br>
+                        <p> auto 3000 listas 'Exiva Last' | exivalast</p><br>
+                        <h4>Target
+                            Exiva seu target a cada 3 segundos</h4><br>
+                        <p>auto 3000 listas 'Exiva Target' | exivatarget</p><br>
+                        <h4>Anti-Push
+                            Gold e Platinum</h4><br>
+                        <p> auto 100 listas 'Anti-Push' | ifnot [$topitem.$posx.$posy.$posz == 3035 || $topitem.$posx.$posy.$posz == 3031] {dropitemsxyzamount $posx $posy $posz 3031 $rand.1.3} | ifnot [$topitem.$posx.$posy.$posz == 3035 || $topitem.$posx.$posy.$posz == 3031] {dropitemsxyzamount $posx $posy $posz 3035 $rand.1.2}</p><br>
+                        <h4></h4><br>
+                        <p></p><br>
+        </div>
+    </section>
+    <h3>DOWLOADS</h3>
+    <section id="download">
+        <div class="container">
+            <h1>Download elfbot (senha 123):</h1>
+            <p>https://www.mediafire.com/file/rn8j40it1bupwj7</p>
+            <h1>Download da dll:</h1>
+            <p>https://www.mediafire.com/file/cg4xkxw1p1646tf/elfbot.dll</p>
+            <img src="./public/elfbotdowload.jfif" >
+            <h1>Download do Tibia 8.6</h1>
+            <p>http://www.mediafire.com/file/p65yg38tq11ndlr/Tibia86.rar</p>
+            <img src="./public/tibia860.jpg" >
+            <h1>Download ip changer (senha 123): </h1>
+            <p>https://www.mediafire.com/file/l9m86owx01r5r7l</p>
+            <img src="./public/ipchange.jfif" >
+        </div>
+        <span>Simples, instale o Elfbot e vá até a pasta onde ele está instalado, baixe a dll do link a cima e extraia ela (com winrar), substituta esse arquivo .dll pelo que já vem na pasta oficial do eflbot, ao jogar para a pasta o windows vai perguntar se quer substituir e você diz sim! Agora é só abrir o Tibia e depois o elfbot, nessa sequencia.</span>
+    </section>
+    <h3>TUTORIAL</h3>
+    <section id="targeting-tutorial">
+        <h3>Como configurar a aba 'Targeting' do seu Elfbot</h3>
+        <img src="./public/Elfbot - Targeting.png" alt="Elfbot - Targeting">
+        <p>O sistema de segmentação pode ser usado por usuários avançados e regulares. Ele pode executar as tarefas mais simples, mas também agir de forma mais inteligente com mais complicações, se necessário. Ele pode ser usado sozinho ou junto com o cavebot e foi criado para combater de forma mais eficaz as várias criaturas do Tibia. Ele permite que você insira como cada monstro diferente precisa ser atacado, abordado e possivelmente protegido.</p>
+        
+        <h3>Como adicionar um novo Monstro</h3>
+        <img src="./public/Targeting - m1.png" alt="Targeting - M1">
+        <p>Para começar, abra a caixa de diálogo Targeting no menu principal do bot. Várias opções estão agora disponíveis para você, conforme mostrado abaixo.</p>
+        <ol>
+            <li>Clique na caixa de listagem para indicar que você adicionará um novo monstro à lista.</li>
+            <li>No campo 'Name', digite o nome do monstro, ex: Rotworm.</li>
+            <li>Deixe o campo 'Configuração #' em 1 para preencher os campos para a configuração #1 (vamos fazer apenas uma configuração).</li>
+            <li>Deixe o campo 'Count' em 'Any' para indicar que a segmentação escolherá esta entrada para qualquer quantidade do monstro definido na tela.</li>
+            <li>Coloque de 0 a 100 na caixa de intervalo HP% para indicar que as seguintes configurações devem ser executadas para qualquer quantidade de hp que o monstro possa ter.</li>
+            <li>Selecione o ataque especial que o monstro pode usar.</li>
+        </ol>
+        <p>O Danger Level permite atribuir um valor personalizado variando de 0 a 10 para cada configuração de monstro. Este valor é usado para determinar a prioridade de seleção do monstro.</p>
+    </section>
+    
+<section id="cavebot-tutorial">
+    <h3>Como configurar a aba 'Cavebot' do seu Elfbot</h3>
+    <img src="./public/cavebot-elfbot.webp" alt="Cavebot Elfbot">
+    <p>
+        O sistema de Cavebot permite automatizar várias ações enquanto você explora cavernas e caça no Tibia. Aqui está uma visão geral dos principais elementos do Cavebot:
+    </p>
+    <h3>Stand</h3>
+    <p>Isto irá levá-lo para o destino não importa o que esteja no caminho, mesmo que tenha sido interrompido por diversas vezes durante o caminho. Use este tipo de waypoint perto de cordas e pás.</p>
+    <h3>Node</h3>
+    <p>Nodes são semelhantes a Stand, mas têm uma funcionalidade adicional que pode ser ligada e desligada.</p>
+    <h3>Walk</h3>
+    <p>Serve para andar em determinado local. É melhor usado se você quiser ir para o respaw de um monstro.</p>
+    <h3>Rope</h3>
+    <p>Função para usar a corda.</p>
+    <h3>Ladder</h3>
+    <p>Função para subir ou descer uma escada.</p>
+    <h3>Action</h3>
+    <p>Permite digitar comandos personalizados.(Voce pode digitar qalquer coisando dentro do campo action)</p>
+    <h3>Lure</h3>
+    <p>Usado com o "Lure Target” Targeting stance. Este waypoint define o local para que o personagem atraia o monstro.</p>
+    <h3>Como subir escadas / rampas / buracos</h3>
+    <p>Use o "Emplacement" para colocar waypoints ao seu redor. Por exemplo, para ir á um buraco que está no SQM sul de você, mude o “Emplacement” para “SOUTH” e coloque um stand waypoint.</p>
+    <h3>Alarmes</h3>
+    <p> Isto deve ser bastante evidente para a maior parte. Existem alarmes dos 5 diferentes eventos listados. Cada alarme tem 3 correspondentes caixas marcadas S, P e X.
+    </p>
+    <h3>[TUTORIAL] LOOTING !</h3>
+    <p> Ao lado direito do cavebot tem tem o looting;
+
+        Existe um quadrado grande e abaixo 3 espaços, um pequeno,medio,grande.
+        O espeço medio q é o primeiro espaço, é aonde você vai por o ID de seus itens que você quer que pegue dos bixos.
+        Exemplo : 3392 (ID do RH)
+        
+        O espaço pequeno é aonde você coloca códigos para onde vai seu loot
+        e1 = Não vai para sua backpack principal, entao abra sua bp principal e sua bp de loot.
+        00 = Loot irá para sua bp principal.
+        gg = Todo loot dropado do bixo írá ser amontuado embaixo de seu personagem.
+        
+        No espaço grande você coloca o nome do item.
+        Exemplo: Royal Helmet
+        
+        Entao Ficará assim no exemplo:
+        3392 > 00 > Royal helmet
+        
+        
+        Logo abaixo existem 4 quadradinhos que você DEVERÀ seleciona-los
+        [X] Open Next BP
+        [X] Loot Nearby targets
+        [X] Loot Distant tergets
+        
+        Depois disso, você já pode dar save em seu waypoint que já irá salvar com o loot.
+        Para salvar é só ir ao canto esquerdo do Cavebot botar o nome de seus waypoints Ex: Rotworm Darashia e dar "Save".
+        </p>
+</section>
+
+    </section>
+
+    <footer class="woll">
+        <div class="fotes">
+            <footer class="woll">
+                <div class="fotes">
+                    <ul>
+                        <li>
+                            <a href="/">Inicio</a>
+                            <a href="">Sobre</a>
+                            <a href="">Website</a>
+                            <a href="">Hotkeys</a>
+                        </li>
+                    </ul> 
+                    <h2>Softwarezeraah</h2>
+                    <img src="./public/magePersonagem.webp" alt="Boneco">
+                    <ul>
+                        <li>
+                            <a href="">Forum</a>
+                            <a href="">Hotkeys</a>
+                            <a href="">Dowload</a>
+                            <a href="">Tutorial</a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </footer>
+    <footer class="copyright">
+        <p>&copy; 2024 Softwarezeraah. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

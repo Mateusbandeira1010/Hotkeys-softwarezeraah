@@ -1,0 +1,312 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globais de fonte */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #000;
+    color: #f1f1f1;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3 {
+    background-color: #EF924C;
+    text-align: center;
+    color: #f1f1f1;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Estilos para a seção de início */
+#inicio {
+    background-color: #000;
+    padding: 20px;
+}
+
+#inicio h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#inicio p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+#inicio h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#inicio ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+#inicio ul li {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+#inicio ul li strong {
+    color: #333;
+}
+
+.nome {
+    color: #EF924C; /* Cor personalizada */
+}
+
+#cont-um {
+    list-style-type: none;
+    display: flex;
+}
+
+#cont-um li {
+    margin-right: 20px;
+    cursor: pointer;
+    transition: font-size 0.5s ease; 
+}
+
+#cont-um li a {
+    text-decoration: none;
+    color: #EF924C; 
+    font-size: 20px;
+}
+
+#cont-um li:hover {
+    font-size: 25px;
+    color: #cf6615;
+}
+
+#menu {
+    background-color: #EF924C;
+    display: flex;
+    justify-content: center;
+}
+
+#menu li {
+    margin-right: 20px;
+    text-align: center;
+    list-style: none;
+}
+
+#menu li img {
+    display: block;
+    margin-bottom: 10px; 
+}
+
+#menu li span {
+    display: block;
+    color: #f1f1f1;
+    font-size: 24px;
+}
+
+/* Estilos para o conteúdo à esquerda */
+.container-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; 
+}
+
+.container-left > div {
+    display: none;
+    margin-top: 20px;
+}
+
+.container-left > div:first-child {
+    display: block;
+}
+
+.container-left h1 {
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.container-left p {
+    font-size: 16px;
+    line-height: 2.6;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+/* Estilos para o footer */
+footer.woll {
+    background-color: #000;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+/* Estilos para a seção de imagem e texto */
+.fotes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    position: relative; 
+}
+
+.fotes ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.fotes ul li {
+    margin-bottom: 10px;
+}
+
+.fotes ul li a {
+    text-decoration: none;
+    color: #EF924C;
+    margin-right: 10px;
+}
+
+.fotes ul li a:hover {
+    color: #cf6615;
+}
+
+.fotes h2 {
+    margin: 0;
+    text-align: center;
+    color: #f1f1f1;
+    position: absolute; 
+    font-size: 24px;
+    font-weight: 800;
+    top: 80px; 
+}
+
+/* Estilo para a imagem */
+.fotes img {
+    display: block;
+    margin: 0 auto;
+    width: 200px; 
+    height: auto;
+    margin-top: 10px; 
+}
+
+/* Estilos para a seção de hotkeys */
+#hotkey-content {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#hotkey-content h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+#hotkey-content h4 {
+    font-size: 16px;
+    text-align: center;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+#hotkey-content  p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#hotkey-content code {
+    font-family: Consolas, monospace;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+}
+
+#hotkey-content br {
+    margin-bottom: 10px;
+}
+h3 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+/* Estilos para a seção de downloads */
+#download {
+    text-align: center;
+    margin-bottom: 40px; 
+}
+
+#download .container {
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+#download h1,
+#download p,
+#download img,
+#download span {
+    margin-bottom: 20px; 
+}
+
+/* Estilos para a seção de tutoriais */
+#targeting-tutorial,
+#cavebot-tutorial {
+    
+    max-width: 800px; 
+    margin: 0 auto 40px; 
+    text-align: left; 
+    padding: 0 20px; 
+}
+
+#targeting-tutorial h2,
+#cavebot-tutorial h2 {
+    text-align: center; 
+    font-size: 24px;
+    margin-bottom: 20px; 
+}
+
+#targeting-tutorial p,
+#cavebot-tutorial p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#targeting-tutorial img,
+#cavebot-tutorial img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 20px; 
+}
+
+footer.copyright {
+    background-color: #f1f1f1;
+    color: #000;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
